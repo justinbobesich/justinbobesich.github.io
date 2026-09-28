@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en-CA">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Robotic Arm | Justin Bobesich</title>
+<meta content="A robotic arm designed and built by Justin Bobesich, with a custom 3D-printed body and claw, servo motors and a Raspberry Pi that runs face recognition, voice commands and spoken replies." name="description"/>
+
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/css/style.css" rel="stylesheet"/>
+</head>
+<body data-page="arm" data-root="../">
+
+<div id="site-header"></div>
+<main id="main">
+<header class="project-head">
+<div class="wrap">
+<div class="crumbs"><a href="../index.html#projects">Projects</a> / 03</div>
+<h1>Robotic Arm</h1>
+<p class="lead">My most recent project is a robotic arm that can see, listen and talk back. I designed and 3D-printed the body and claw myself, and it runs on a Raspberry Pi that I programmed to recognise faces, respond to voice commands and answer out loud. Servo motors move the joints.</p>
+<dl class="titleblock">
+<div><dt>Started</dt><dd>2024 · age 15</dd></div>
+<div><dt>Controller</dt><dd>Raspberry Pi</dd></div>
+<div><dt>Senses</dt><dd>Camera · microphone</dd></div>
+<div><dt>Status</dt><dd>Working · still developing</dd></div>
+</dl>
+</div>
+</header>
+<section aria-label="The robotic arm" class="wrap video-feature">
+<figure>
+<img alt="The finished robotic arm: grey and black 3D-printed segments on a square base, with a two-finger claw at the top" height="1600" src="../assets/images/robotic-arm/arm-1.jpg" width="960"/>
+<figcaption><b>2026</b>The arm standing upright, with its two-finger claw at the top.</figcaption>
+</figure>
+<div class="video-notes">
+<span class="label">At a glance</span>
+<h2>What it can do</h2>
+<ul class="watch">
+<li><span class="label">See</span>A camera lets it recognise faces.</li>
+<li><span class="label">Listen</span>A microphone picks up voice commands.</li>
+<li><span class="label">Talk</span>A speaker lets it talk back.</li>
+<li><span class="label">Move</span>Servo motors drive the joints and the claw.</li>
+<li><span class="label">Think</span>A Raspberry Pi runs the program I wrote for it.</li>
+</ul>
+
+</div>
+</section>
+<div class="wrap project-body" style="margin-top:56px">
+<nav aria-label="On this page" class="toc">
+<span class="label">On this page</span>
+<ol>
+<li><a href="#idea">The Idea</a></li>
+<li><a href="#build">Design &amp; Build</a></li>
+<li><a href="#electronics">Electronics</a></li>
+<li><a href="#software">Software</a></li>
+<li><a href="#parts">Parts</a></li>
+<li><a href="#learned">What I’m Learning</a></li>
+
+</ol>
+</nav>
+<div>
+<section class="chapter" id="idea">
+<span class="label">01 · The Idea</span>
+<h2>Why a robotic arm</h2>
+<div class="prose"><p>My earlier projects were mostly mechanical. A robotic arm let me combine mechanical design and 3D printing with programming, and build something that could react to people: see who’s there, listen and answer.</p></div>
+
+</section>
+<section class="chapter" id="build">
+<span class="label">02 · Design &amp; Build</span>
+<h2>A custom 3D-printed body</h2>
+<div class="prose">
+<p>I designed the body and claw myself and 3D-printed them. The arm is made of grey and black printed segments on a square base, with round housings at the joints where the servo motors sit, and a two-finger claw at the top.</p>
+</div>
+<div class="gallery">
+<figure><img alt="The robotic arm from the front" loading="lazy" src="../assets/images/robotic-arm/arm-3.jpg"/><figcaption><b>Front</b>Base, segments and claw.</figcaption></figure>
+<figure><img alt="The robotic arm bent forward" loading="lazy" src="../assets/images/robotic-arm/arm-2.jpg"/><figcaption><b>Posed</b>Arm bent at the joints.</figcaption></figure>
+<figure><img alt="Close-up of a printed joint housing where two segments meet" loading="lazy" src="../assets/images/robotic-arm/joint.jpg"/><figcaption><b>Joint</b>A printed joint housing.</figcaption></figure>
+<figure><img alt="The arm lying on a cutting mat with a red servo motor, a ribbon cable and servo wires coming out of the base plate" loading="lazy" src="../assets/images/robotic-arm/base-wiring.jpg"/><figcaption><b>Base</b>A servo at the base, the camera’s ribbon cable and the wiring.</figcaption></figure>
+<figure><img alt="Another view of the base plate with the servo and wiring" loading="lazy" src="../assets/images/robotic-arm/base-front.jpg"/><figcaption><b>Base plate</b>Where the wiring leaves the arm.</figcaption></figure>
+</div>
+<h3 style="margin-top:28px">Earlier electronics · Jun 2024</h3>
+<p class="prose">An earlier stage of the electronics: a Raspberry Pi and motor-driver boards mounted in a 3D-printed base.</p>
+<div class="gallery">
+<figure><img alt="A 3D-printed base holding a Raspberry Pi and three red motor-driver boards" loading="lazy" src="../assets/images/robotic-arm/v1-electronics-2024.jpg"/><figcaption><b>Jun 2024</b>A Raspberry Pi and red motor-driver boards in a printed base.</figcaption></figure>
+<figure><img alt="The same base with wiring added" loading="lazy" src="../assets/images/robotic-arm/v1-electronics-2024-b.jpg"/><figcaption><b>Jun 2024</b>Wiring the drivers.</figcaption></figure>
+<figure><img alt="The base fully wired" loading="lazy" src="../assets/images/robotic-arm/v1-electronics-2024-c.jpg"/><figcaption><b>Jun 2024</b>Fully wired.</figcaption></figure>
+</div>
+<p>The arm has a rotating base, then shoulder, elbow and wrist joints, each inside one of the round black housings, and a two-finger claw at the end. The earlier electronics base from 2024 was the first stage of the project, before I moved to servo motors.</p>
+
+</section>
+<section class="chapter" id="electronics">
+<span class="label">03 · Electronics</span>
+<h2>Camera, microphone, speaker and servos</h2>
+<div class="prose">
+<p>A Raspberry Pi is the brain of the arm. A camera, a microphone and a speaker are connected to it, and it controls the servo motors that move the joints and the claw. Wires run from the servos down through the arm to the base, and the whole arm runs on plugged-in power.</p>
+</div>
+
+</section>
+<section class="chapter" id="software">
+<span class="label">04 · Software</span>
+<h2>Face recognition, voice commands and talking back</h2>
+<div class="prose">
+<p>I programmed the arm myself on the Raspberry Pi. Everything the arm does runs through that program: it takes in what the camera sees and what the microphone hears, decides what to do, and then moves the servos or answers through the speaker.</p>
+</div>
+<div aria-label="How the robotic arm works" class="flow">
+<div class="node"><b>Senses</b>Camera sees faces · microphone hears commands</div>
+<div aria-hidden="true" class="arrow">→</div>
+<div class="node"><b>Raspberry Pi</b>My program recognises faces and understands voice commands</div>
+<div aria-hidden="true" class="arrow">→</div>
+<div class="node"><b>Move</b>Servo motors move the joints and the claw</div>
+<div aria-hidden="true" class="arrow">→</div>
+<div class="node"><b>Talk</b>The speaker answers back</div>
+</div>
+<div class="prose">
+<p><strong>Face recognition.</strong> The camera, connected to the Pi with a flat ribbon cable, lets the arm recognise the faces of people in front of it.</p>
+<p><strong>Voice commands.</strong> The microphone picks up spoken commands, which the program turns into actions.</p>
+<p><strong>Talking back.</strong> The speaker lets the arm reply out loud, so it can respond to what it hears and sees.</p>
+</div>
+
+</section>
+<section class="chapter" id="parts">
+<span class="label">05 · Parts</span>
+<h2>Main components</h2>
+<p class="prose">Here are some of the main components.</p>
+<div class="parts-wrap">
+<table class="parts">
+<thead><tr><th>Component</th><th>What it does</th></tr></thead>
+<tbody>
+<tr><td>Custom 3D-printed body and claw</td><td>My own design: base, arm segments, joint housings and a two-finger claw</td></tr>
+<tr><td>Raspberry Pi</td><td>Runs the program and controls everything</td></tr>
+<tr><td>Servo motors</td><td>Move the joints and the claw</td></tr>
+<tr><td>Camera</td><td>Face recognition</td></tr>
+<tr><td>Microphone</td><td>Voice commands</td></tr>
+<tr><td>Speaker</td><td>Talking back</td></tr>
+<tr><td>Wiring and plugged-in power</td><td>Connects the servos and powers the arm</td></tr>
+
+</tbody>
+</table>
+</div>
+</section>
+<section class="chapter" id="learned">
+<span class="label">06 · What I’m Learning</span>
+<h2>What this project is teaching me</h2>
+<div class="prose">
+<p>The arm brings together more than any of my earlier projects: mechanical design and 3D printing for the body and claw, wiring and power for the servos, and programming for vision, speech and movement, all working together on one Raspberry Pi.</p>
+</div>
+</section>
+
+<nav aria-label="More projects" class="next-project">
+<a href="wall-climber.html"><span class="label">← Previous · 02</span><span class="t">Suction Wall Climber</span></a>
+<a class="r" href="3d-printing.html"><span class="label">Next · 04</span><span class="t">3D Design &amp; Printing →</span></a>
+</nav>
+</div>
+</div>
+</main>
+<div id="site-footer"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
