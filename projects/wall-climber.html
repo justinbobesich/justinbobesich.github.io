@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html lang="en-CA">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Suction Wall Climber | Justin Bobesich</title>
+<meta content="A motor-driven suction wall climber designed and built by Justin Bobesich, including the prototypes and testing." name="description"/>
+
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/css/style.css" rel="stylesheet"/>
+</head>
+<body data-page="climber" data-root="../">
+
+<div id="site-header"></div>
+<main id="main">
+<header class="project-head">
+<div class="wrap">
+<div class="crumbs"><a href="../index.html#projects">Projects</a> / 02</div>
+<h1>Suction Wall Climber</h1>
+<p class="lead">Two climbing units that hold onto a wall with motor-driven suction. My first prototypes were too small or didn’t hold strongly enough, so I scaled up the final units and improved the seal. I still have the wall climber, and it still works.</p>
+<dl class="titleblock">
+<div><dt>Built</dt><dd>2023 · age 13</dd></div>
+<div><dt>Timeline</dt><dd>Dec 2022 – Feb 2023</dd></div>
+<div><dt>Holds with</dt><dd>Motor-driven suction</dd></div>
+<div><dt>Status</dt><dd>Still working</dd></div>
+</dl>
+</div>
+</header>
+
+<section aria-label="Video of the wall climber in use" class="wrap video-feature">
+<figure>
+<div class="video video-vertical">
+<video controls="" playsinline="" poster="../assets/images/wall-climber/video-poster.jpg" preload="metadata">
+<source src="../assets/videos/wall-climber-demo.mp4" type="video/mp4"/>
+            Your browser can’t play this video. <a href="../assets/videos/wall-climber-demo.mp4">Download it here.</a>
+</video>
+</div>
+<figcaption><b>Video · 1:31</b>The completed prototype, climbing up a wall and back down. Filmed February 12, 2023, when I was 13.</figcaption>
+</figure>
+<div class="video-notes">
+<span class="label">In the video</span>
+<h2>The completed prototype</h2>
+<p>This is the completed prototype, filmed the day after I added foot pads and made my final adjustments.</p>
+<ul class="watch">
+<li><span class="label">Unit</span>A one-foot-square wooden box with a vacuum pump, a solenoid valve and an inch-thick window seal.</li>
+<li><span class="label">Hold</span>Suction holds a unit against the wall.</li>
+<li><span class="label">Release</span>A switch releases it, so I can move that unit up and attach it again.</li>
+<li><span class="label">Repeat</span>Then I move the other unit.</li>
+</ul>
+<p>I hold one unit in each hand by its grip and stand in the foot supports that hang below them on chains. To climb, I release one unit, lift it higher, let it seal again, step up, and then do the same with the other.</p>
+
+</div>
+</section>
+<div class="wrap project-body" style="margin-top:48px">
+<nav aria-label="On this page" class="toc">
+<span class="label">On this page</span>
+<ol>
+<li><a href="#idea">The Idea</a></li>
+<li><a href="#physics">How Suction Holds</a></li>
+<li><a href="#force">Getting Enough Force</a></li>
+<li><a href="#design">Materials &amp; Design</a></li>
+<li><a href="#prototypes">Prototypes</a></li>
+<li><a href="#testing">Testing &amp; Failures</a></li>
+<li><a href="#safety">Safety</a></li>
+<li><a href="#final">Final Version</a></li>
+<li><a href="#learned">What I Learned</a></li>
+</ol>
+</nav>
+<div>
+<section class="chapter" id="idea">
+<span class="label">01 · The Idea</span>
+<h2>Could suction hold a person?</h2>
+<div class="prose">
+<p>It started with Spider-Man. At about 11 I built web shooters that wound themselves back up after firing. That interest led to a bigger question: could I build something that would let a person climb a wall?</p>
+</div>
+</section>
+<section class="chapter" id="physics">
+<span class="label">02 · How Suction Holds</span>
+<h2>The physics</h2>
+<div class="prose">
+<p>A suction cup doesn’t actually pull on the wall. When air is removed from inside the cup, the pressure inside drops, and the air pressure outside pushes the cup against the surface. The bigger the pressure difference and the bigger the sealed area, the harder it’s pressed on.</p>
+<p>On a vertical wall there’s a second part to it: a climber’s weight acts <em>down along</em> the wall, not straight away from it. What stops the cup sliding is friction between the seal and the wall, and that friction depends on how hard the cup is pressed on.</p>
+</div>
+<div class="physics">
+
+<svg aria-labelledby="fd-title fd-desc" role="img" viewbox="0 0 360 312">
+<title id="fd-title">Force diagram of a suction cup on a vertical wall</title>
+<desc id="fd-desc">Air pressure pushes the cup onto the wall. The load pulls downward along the wall and friction at the seal resists it.</desc>
+<defs>
+<pattern height="8" id="hatch" patterntransform="rotate(45)" patternunits="userSpaceOnUse" width="8"><line stroke="#9aa0a6" stroke-width="1" x1="0" x2="0" y1="0" y2="8"></line></pattern>
+<marker id="ar" markerheight="7" markerwidth="7" orient="auto-start-reverse" refx="9" refy="5" viewbox="0 0 10 10"><path d="M0 0L10 5L0 10z" fill="#16181b"></path></marker>
+<marker id="ara" markerheight="7" markerwidth="7" orient="auto-start-reverse" refx="9" refy="5" viewbox="0 0 10 10"><path d="M0 0L10 5L0 10z" fill="#c4501c"></path></marker>
+</defs>
+
+<rect fill="url(#hatch)" height="280" width="40" x="20" y="10"></rect>
+<line stroke="#16181b" stroke-width="2" x1="60" x2="60" y1="10" y2="290"></line>
+<text fill="#7c828b" font-family="IBM Plex Mono, monospace" font-size="10" text-anchor="middle" x="40" y="304">WALL</text>
+
+<path d="M60 80 L70 80 Q150 90 150 150 Q150 210 70 220 L60 220" fill="#ffffff" stroke="#16181b" stroke-width="2"></path>
+<path d="M60 92 L68 92 Q136 100 136 150 Q136 200 68 208 L60 208 Z" fill="#fbe7dc" stroke="none"></path>
+<text fill="#9c3d12" font-family="IBM Plex Mono, monospace" font-size="11" text-anchor="middle" x="98" y="146">P</text>
+<text fill="#9c3d12" font-family="IBM Plex Mono, monospace" font-size="8" x="106" y="150">in</text>
+<text fill="#9c3d12" font-family="IBM Plex Mono, monospace" font-size="8" text-anchor="middle" x="98" y="162">low</text>
+
+<line stroke="#16181b" stroke-width="3" x1="150" x2="190" y1="150" y2="150"></line>
+
+<g marker-end="url(#ar)" stroke="#16181b" stroke-width="1.5">
+<line x1="215" x2="160" y1="95" y2="105"></line>
+<line x1="235" x2="160" y1="128" y2="132"></line>
+<line x1="235" x2="160" y1="172" y2="168"></line>
+<line x1="215" x2="160" y1="205" y2="195"></line>
+</g>
+<text fill="#16181b" font-family="IBM Plex Mono, monospace" font-size="11" x="245" y="120">P</text>
+<text fill="#16181b" font-family="IBM Plex Mono, monospace" font-size="8" x="253" y="124">atm</text>
+<text fill="#4b5058" font-family="IBM Plex Sans, sans-serif" font-size="10" x="245" y="138">outside air</text>
+<text fill="#4b5058" font-family="IBM Plex Sans, sans-serif" font-size="10" x="245" y="150">pushes cup on</text>
+
+<line marker-end="url(#ara)" stroke="#c4501c" stroke-width="2" x1="190" x2="190" y1="150" y2="270"></line>
+<text fill="#9c3d12" font-family="IBM Plex Mono, monospace" font-size="11" x="198" y="262">W</text>
+<text fill="#4b5058" font-family="IBM Plex Sans, sans-serif" font-size="10" x="198" y="276">climber’s weight</text>
+
+<line marker-end="url(#ara)" stroke="#c4501c" stroke-width="2" x1="74" x2="74" y1="250" y2="186"></line>
+<text fill="#9c3d12" font-family="IBM Plex Mono, monospace" font-size="11" x="82" y="248">F</text>
+<text fill="#9c3d12" font-family="IBM Plex Mono, monospace" font-size="8" x="89" y="252">f</text>
+<text fill="#4b5058" font-family="IBM Plex Sans, sans-serif" font-size="10" x="82" y="264">friction at seal</text>
+</svg>
+<div>
+<span class="label">Pressing force</span>
+<div class="eq">F = (P<sub>atm</sub> − P<sub>in</sub>) × A</div>
+<span class="label">Resisting slip on a vertical wall</span>
+<div class="eq">F<sub>f</sub> ≤ μ × F   → must be ≥ W</div>
+<dl>
+<dt>P<sub>atm</sub></dt><dd>outside air pressure (≈101 kPa at sea level, lower at higher elevations)</dd>
+<dt>P<sub>in</sub></dt><dd>pressure inside the cup</dd>
+<dt>A</dt><dd>sealed area of the cup</dd>
+<dt>μ</dt><dd>friction coefficient between seal and wall</dd>
+<dt>W</dt><dd>load on that cup</dd>
+</dl>
+<p>With a sealed area about one foot square, even a partial vacuum presses the box against the wall with a lot of force. Rather than rely on a calculation, I found the limits by testing in stages, starting close to the ground.</p>
+</div>
+</div>
+
+</section>
+<section class="chapter" id="force">
+<span class="label">03 · Getting Enough Force</span>
+<h2>Bigger units, better seal</h2>
+<div class="prose">
+<p>Each final unit is a wooden box about one foot by one foot. Around the inside edge is a window seal about an inch thick, which presses against the wall and seals in the suction. A vacuum pump inside the box pulls the air out from behind it.</p>
+<p>My first prototypes were too small or didn’t hold strongly enough. For the final version I increased the size and improved the seal. Following the physics above, a bigger sealed area gives more pressing force for the same drop in pressure, and a better seal lets the pump hold that pressure.</p>
+</div>
+<p>Each final unit uses a 24-volt vacuum pump, run from a plug-in power supply, which is why the units are connected by a cord.</p>
+
+</section>
+<section class="chapter" id="design">
+<span class="label">04 · Materials &amp; Design</span>
+<h2>Main components</h2>
+<div class="prose">
+<p>Everything for one unit fits inside its wooden box: the vacuum pump, a solenoid valve, an on/off switch and a micro switch. A support for the user’s feet hangs below each box.</p>
+<p>The on/off switch runs the pump. The micro switch works the release: pressing it opens the solenoid valve, letting air back into the box so the seal lets go and the unit can be moved. Letting go of it closes the valve so the unit can seal again. The one-foot size came from the prototypes: the smaller boxes didn’t hold strongly enough. It works on smooth, painted interior walls like the ones in the videos.</p>
+
+</div>
+<p class="prose">Here are the main components of each unit.</p>
+<div class="parts-wrap">
+<table class="parts">
+<thead><tr><th>Component</th><th>What it does</th></tr></thead>
+<tbody>
+<tr><td>Wooden box, about 1 ft × 1 ft</td><td>Houses everything and forms the suction chamber</td></tr>
+<tr><td>Window seal, about 1 in thick</td><td>Runs around the inside of the box and seals it against the wall</td></tr>
+<tr><td>Vacuum pump</td><td>Pulls the air out from behind the box</td></tr>
+<tr><td>Solenoid valve</td><td>Inside the box</td></tr>
+<tr><td>On/off switch</td><td>Power</td></tr>
+<tr><td>Micro switch</td><td>Control</td></tr>
+<tr><td>Hand grip</td><td>Holding and moving the unit</td></tr>
+<tr><td>Chain with foot support</td><td>Hangs below the unit to stand on</td></tr>
+
+
+
+</tbody>
+</table>
+</div>
+<h3 style="margin-top:28px">With the cover off</h3>
+<p class="prose">Some of the test videos were filmed with the cover off, which shows what’s inside a unit: the vacuum pump, the wiring, the hand grip and the bracket the chain hangs from. The solenoid valve and switches are inside too.</p>
+<div class="gallery two">
+<figure><img alt="Looking up at a unit on the ceiling with its cover off: a motor and pump in a black bracket, red wiring, a curved steel handle and a chain bracket" loading="lazy" src="../assets/images/wall-climber/ceiling-cover-off.jpg"/><figcaption><b>Feb 6, 2023 · ceiling test</b>Cover off: the vacuum pump, wiring, handle and chain bracket.</figcaption></figure>
+<figure><img alt="A unit on a stairwell wall with its cover off, showing the electronics, with the chain hanging below" loading="lazy" src="../assets/images/wall-climber/wall-cover-off.jpg"/><figcaption><b>Feb 5, 2023 · wall test</b>Cover off on the wall, with the chain hanging below.</figcaption></figure>
+</div>
+
+</section>
+<section class="chapter" id="prototypes">
+<span class="label">05 · Prototypes</span>
+<h2>Versions along the way</h2>
+<h3 style="margin-top:8px">Earlier prototype · January 22, 2023</h3>
+<div class="prose">
+<p>This earlier prototype used the same idea at a smaller size: an open wooden box with a small motor and pump inside and a clear hose. It was too small, so for the final units I increased the size and improved the seal.</p>
+
+<p>I tested it the same way as everything else, close to the floor, and it didn’t hold strongly enough. Besides making the box bigger, the final units got a thick window seal, a closed cover, a proper hand grip and a chain with a foot support.</p>
+
+</div>
+
+<div class="video-feature compact">
+<figure>
+<div class="video video-vertical">
+<video controls="" playsinline="" poster="../assets/images/wall-climber/prototype-1-poster.jpg" preload="metadata">
+<source src="../assets/videos/wall-climber-prototype-1.mp4" type="video/mp4"/>
+<a href="../assets/videos/wall-climber-prototype-1.mp4">Download the video.</a>
+</video>
+</div>
+<figcaption><b>Video · 0:29</b>Testing the earlier, smaller prototype close to the floor, then a look inside the box. January 2023.</figcaption>
+</figure>
+<div>
+<span class="label">Earlier → Final</span>
+
+<div class="gallery" style="grid-template-columns:1fr 1fr;margin-top:12px">
+<figure><img alt="Earlier prototype: an open pine box on the wall with a small motor, pump and clear hose inside" src="../assets/images/wall-climber/prototype-1-closeup.jpg"/><figcaption><b>Earlier</b>Inside the smaller prototype: motor, pump and hose.</figcaption></figure>
+<figure><img alt="Testing the earlier prototype close to the floor" src="../assets/images/wall-climber/prototype-1-test.jpg"/><figcaption><b>Earlier</b>Testing the prototype close to the floor.</figcaption></figure>
+<figure style="grid-column:1 / -1"><img alt="The larger final suction unit attached to the wall, with Justin climbing, seen from behind" src="../assets/images/wall-climber/final-units.jpg" style="object-position:center 12%"/><figcaption><b>Final</b>The larger final units in use, February 2023.</figcaption></figure>
+</div>
+</div>
+</div>
+<h3>Testing the full-size units · February 1–6, 2023</h3>
+<div class="prose">
+<p>I filmed short clips while building and testing the full-size units. Two of them were taken with the cover off, so you can see inside.</p>
+</div>
+
+<div class="gallery">
+<figure>
+<div class="video video-vertical"><video controls="" playsinline="" poster="../assets/images/wall-climber/test-feb1-poster.jpg" preload="metadata"><source src="../assets/videos/wall-climber-test-2023-02-01.mp4" type="video/mp4"/></video></div>
+<figcaption><b>Video · 0:11 · Feb 1, 2023 · cover on</b>A unit on the wall during testing.</figcaption>
+</figure>
+<figure>
+<div class="video video-vertical"><video controls="" playsinline="" poster="../assets/images/wall-climber/test-feb5-poster.jpg" preload="metadata"><source src="../assets/videos/wall-climber-test-2023-02-05.mp4" type="video/mp4"/></video></div>
+<figcaption><b>Video · 0:12 · Feb 5, 2023 · cover off</b>A unit tested on the wall with the cover off, so the inside is visible.</figcaption>
+</figure>
+<figure>
+<div class="video video-vertical"><video controls="" playsinline="" poster="../assets/images/wall-climber/ceiling-test-poster.jpg" preload="metadata"><source src="../assets/videos/wall-climber-ceiling-test-2023-02-06.mp4" type="video/mp4"/></video></div>
+<figcaption><b>Video · 0:09 · Feb 6, 2023 · cover off</b>A unit tested on the ceiling with the cover off.</figcaption>
+</figure>
+</div>
+<p>Each test added a bit more. On February 1 I tested a finished unit low on a stairwell wall, stepping into the chain with one foot while the other stayed on the stairs. On February 5 I repeated it with the cover off while I worked on the inside. On February 6 I stuck a unit to the ceiling and hung from it, with the floor right below me. Every test was done low, so I could step down if it let go.</p>
+
+<h3 style="margin-top:32px">Final changes · February 11–12, 2023</h3>
+<div class="prose">
+<p>The last round of changes happened on the final day: I added foot pads and made final adjustments. The video at the top of this page shows the completed prototype the next day.</p>
+<p>Between the small prototype on January 22 and the full-size units on February 1, I rebuilt the design at the larger size. After the February tests, the last changes were the foot pads and final adjustments.</p>
+</div>
+</section>
+<section class="chapter" id="testing">
+<span class="label">06 · Testing &amp; Failures</span>
+<h2>What failed and what I changed</h2>
+<div class="prose">
+<p>I tested in stages. First the small prototype close to the floor, then a full-size unit low on a wall with only part of my weight on it, then hanging my full weight from a unit on the ceiling, and only then a full climb.</p>
+<p>The main failure was the first prototypes: they were too small or didn’t hold strongly enough. The fix was a bigger box and a better seal. The final round of changes added foot pads and fine-tuned the units before the full climb.</p>
+
+</div>
+</section>
+<section class="chapter" id="safety">
+<span class="label">07 · Safety</span>
+<h2>Safety considerations</h2>
+<div class="prose">
+<p>Every test started close to the ground, so I could step down if a unit let go, and I only added weight or height once the step before had worked. The units depend on a good seal on a smooth surface and on power to the pumps. That’s why I haven’t published a holding capacity: it’s a personal experiment, not a product, and I’d need to measure it properly first.</p>
+
+</div>
+</section>
+<section class="chapter" id="final">
+<span class="label">08 · Final Version</span>
+<h2>The version that works</h2>
+<div class="prose">
+<p>The final design uses two one-foot-square wooden boxes. Each one is sealed to the wall with an inch-thick window seal and has its own vacuum pump, solenoid valve, on/off switch and micro switch. They’re larger than my first prototypes and seal better. I still have the wall climber, and it still works.</p>
+</div>
+<figure class="media-wide" style="max-width:520px">
+<img alt="Justin seen from behind, high on an interior wall, holding a suction unit with his feet in the foot supports" loading="lazy" src="../assets/images/wall-climber/cover.jpg"/>
+<figcaption><b>Feb 2023</b>The final units in use, high on the wall.</figcaption>
+</figure>
+</section>
+<section class="chapter" id="learned">
+<span class="label">09 · What I Learned</span>
+<h2>What I took away from it</h2>
+<div class="prose">
+<p>This project made the physics real. The size of the sealed area and the quality of the seal mattered more than anything else, which is exactly what the pressure-times-area formula says. It also taught me to test in small steps, low to the ground, before trusting a design with my full weight. If I built it again, I’d measure the holding force properly with weights before climbing.</p>
+
+</div>
+</section>
+<nav aria-label="More projects" class="next-project">
+<a href="claw-machine.html"><span class="label">← Previous · 01</span><span class="t">Arcade Claw Machine</span></a>
+<a class="r" href="robotic-arm.html"><span class="label">Next · 03</span><span class="t">Robotic Arm →</span></a>
+</nav>
+</div>
+</div>
+</main>
+<div id="site-footer"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
