@@ -15,8 +15,7 @@
     { id: "arm",     num: "03", title: "Robotic Arm",             href: "projects/robotic-arm.html" },
     { id: "print",   num: "04", title: "3D Design & Printing",    href: "projects/3d-printing.html" },
     { id: "lock",    num: "05", title: "Remote Door Lock",        href: "projects/door-lock.html" },
-    { id: "robot",   num: "06", title: "Robotics & Other Builds", href: "projects/robotics.html" },
-    { id: "cup",     num: "07", title: "Custom Cup Holder Adapters", href: "projects/cup-holder-adapter.html" }
+    { id: "robot",   num: "06", title: "Robotics & Other Builds", href: "projects/robotics.html" }
     // Add new projects here, e.g.
     // { id: "newthing", num: "07", title: "New Project", href: "projects/new-project.html" }
   ];
